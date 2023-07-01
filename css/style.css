@@ -98,8 +98,75 @@ img{
 
 .content{
   grid-area: cont;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
+.titulo{
+  color: #b07dfb;
+}
+
+.titulo h1{
+  font-size: 4rem;
+  line-height: .9;
+}
+
+.titulo span{
+  font-style: italic;
+}
+
+.caracteristicas{
+  display: flex;
+  gap: 30px;
+}
+
+.caracteristicas div{
+  display: flex;
+  flex-direction: column;
+}
+
+.caracteristicas .numero{
+  font-size: 3rem;
+  padding: 0 16px;
+  color: #b07dfb;
+  background: linear-gradient(135deg, #8845ee, #b97dfb);
+  border-radius: 5px 5px 0 0;
+}
+
+.caracteristicas .rotulo{
+  color: #b07dfb;
+  text-align: center;
+  box-shadow: 5px 5px 15px 0 rgba(44, 44, 44, 0.15);
+  padding: 5px;
+}
+
+.content p{
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.content p:nth-of-type(1){
+  grid-column: span 2;
+}
+.content p:nth-of-type(2){
+  font-size: .875rem;
+  max-width: 26ch;
+  color: #b07dfb;
+}
+
+.content img:nth-of-type(1){
+  grid-row: span 2;
+  width: 100%;
+}
+.content img:nth-of-type(2){
+  width: 100%;
+  align-self: end;
+}
 /* ANUNCIOS */
 
 .anuncios{
